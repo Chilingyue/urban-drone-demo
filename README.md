@@ -2,8 +2,9 @@
 
 Python + PX4 SITL + Gazebo Harmonic + ROS2 Jazzy/MAVROS。下面按日常使用频率排列操作，仅用于仿真。
 
-源码仓库不包含历史 `runs/` 飞行记录、`replays/` 会话、`generated/` 场景产物或旧备份。
-首次运行会重新生成所需场景和本轮数据；下文指定历史运行目录的回放/报告示例，需要另有对应原始记录。
+仓库附带两份精选的完整飞行记录压缩包，选择依据、大小和解压方法见 [示例记录](examples/recordings/README.md)。
+其他历史 `runs/` 飞行记录、`replays/` 会话、`generated/` 场景产物和旧备份不上传。
+首次运行会重新生成所需场景和本轮数据；历史回放/报告示例需要先解压对应记录。
 测试所需的小型数据保留在 `tests/data/`，整理后的验证图表和检查记录保留在 `docs/`。
 
 ## 常用操作
@@ -33,6 +34,23 @@ bash scripts/stop.sh
 
 ### 3. 历史轨迹回放
 
+首次使用仓库附带的两份记录时，在项目根目录解压（每份只需一次；已有同名目录会跳过）：
+
+```bash
+for recording in examples/recordings/*.tar.gz; do
+  target="runs/$(basename "$recording" .tar.gz)"
+  if [ ! -e "$target" ]; then
+    tar -xzf "$recording"
+  fi
+done
+```
+
+较新的 11 月 18 日 13:36 那轮（265.4 秒送达，无恢复动作、无全局重规划）：
+
+```bash
+bash scripts/replay.sh runs/20261118_133653_949261_city_300_0
+```
+
 回放之前讨论的 20:36 那轮（第 5 个障碍实际穿洞）：
 
 ```bash
@@ -49,7 +67,7 @@ bash scripts/replay.sh runs/20261117_203650_676851_city_300_0
 bash scripts/replay.sh runs/20261117_203650_676851_city_300_0 --start 225
 # 第 5 个障碍附近，半速
 bash scripts/replay.sh runs/20261117_203650_676851_city_300_0 --start 265 --speed 0.5
-# 对比之前讨论的 21:09 那轮
+# 对比之前讨论的 21:09 那轮（未附带，需本机原始记录）
 bash scripts/replay.sh runs/20261117_210947_206077_city_300_0 --start 255
 ```
 
