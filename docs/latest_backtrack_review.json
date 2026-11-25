@@ -1,0 +1,835 @@
+{
+  "run": "/home/ros/urban_drone_demo/runs/20261118_122127_226029_city_300_0",
+  "analysis_only": true,
+  "distance_units": "point-cloud clearance is reference-point distance; exterior clearance uses existing 0.35 m body sphere; true cylinder geometry used only offline",
+  "mission": {
+    "success": true,
+    "goal_reached": true,
+    "failure": null,
+    "disarmed": true,
+    "landed_state": 1,
+    "elapsed": 267.208,
+    "strategies": [
+      "OVER",
+      "SIDE_RIGHT",
+      "SIDE_RIGHT",
+      "SIDE_LEFT",
+      "OVER",
+      "SIDE_RIGHT"
+    ],
+    "replans": 0,
+    "map_updates": 895,
+    "recoveries": 0,
+    "baseline": "full"
+  },
+  "retreats": [
+    {
+      "site": "wall1",
+      "x_retreat_m": 0.16094207763671875,
+      "peak": [
+        54.66,
+        33.834686279296875,
+        -3.495029926300049,
+        13.10955810546875
+      ],
+      "valley": [
+        55.353,
+        33.673744201660156,
+        -3.4826900959014893,
+        13.123138427734375
+      ],
+      "events": [
+        {
+          "event": "execution_state",
+          "strategy": "TRACK",
+          "stage": "TRACK",
+          "state": "BRAKE",
+          "reason": "braking_distance",
+          "stop_distance": 1.7085845621994817,
+          "clearance": 2.1075828182207985,
+          "continued_corridor": false,
+          "elapsed": 53.736
+        },
+        {
+          "event": "execution_hold",
+          "reason": "braking_distance",
+          "clearance": 2.1075828182207985,
+          "elapsed": 53.738
+        },
+        {
+          "event": "execution_state",
+          "strategy": "TRACK",
+          "stage": "TRACK",
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.7155135563100561,
+          "clearance": 1.5420508516047777,
+          "continued_corridor": false,
+          "elapsed": 54.426
+        },
+        {
+          "event": "decision",
+          "strategy": "OVER",
+          "position": [
+            31.549802780151367,
+            -3.26047682762146,
+            13.069366455078125
+          ],
+          "rejoin": [
+            47.583081474425505,
+            -4.891718656249351,
+            13.0
+          ],
+          "submission_position": [
+            33.68271255493164,
+            -3.4848809242248535,
+            13.12152099609375
+          ],
+          "submission_map_version": 87,
+          "diagnostics": {
+            "map_version_start": 77,
+            "map_version_end": 77,
+            "rejected": [],
+            "openings": [],
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9094.294200118,
+              "scan_received": 9093.703554108,
+              "scan_age_at_evaluation": 0.5906460099995456,
+              "scan_age_now": 0.6610524110001279
+            },
+            "connector": 2.0,
+            "committed_prefix_m": 2.0,
+            "planning_origin": [
+              33.53620816179293,
+              -3.4476475680347876,
+              13.0
+            ],
+            "position": [
+              31.549802780151367,
+              -3.26047682762146,
+              13.069366455078125
+            ],
+            "rejoin": [
+              47.583081474425505,
+              -4.891718656249351,
+              13.0
+            ],
+            "previous_strategy": "TRACK",
+            "initial_route_forward": [
+              0.9947572159855901,
+              -0.10226476052188314
+            ]
+          },
+          "side": null,
+          "previous_side": null,
+          "selection_reason": "lowest_cost",
+          "candidates": [
+            {
+              "strategy": "OVER",
+              "side": null,
+              "cost": 14.696,
+              "incumbent": false,
+              "unknown_fraction": 0.377,
+              "metrics": {
+                "motion_seconds": 12.943288482295337,
+                "entry_seconds": 0.1405011903769475,
+                "clearance_seconds": 0.28849687580186006,
+                "unknown_seconds": 1.3199885802632871,
+                "deviation_seconds": 0.003832267338719874,
+                "length_m": 18.08702606335869,
+                "ascent_m": 2.5,
+                "minimum_observed_clearance_m": 1.5314066147360534,
+                "unknown_fraction": 0.3770491803278688,
+                "total": 14.696107396076151,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9094.294200118,
+                  "scan_received": 9093.703554108,
+                  "scan_age_at_evaluation": 0.5906460099995456,
+                  "scan_age_now": 2.867735357998754
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 14.696107396076151
+              }
+            },
+            {
+              "strategy": "SIDE_RIGHT",
+              "side": "SIDE_RIGHT",
+              "cost": 23.108,
+              "incumbent": false,
+              "unknown_fraction": 0.511,
+              "metrics": {
+                "motion_seconds": 17.964893556172058,
+                "entry_seconds": 0.1405011903769475,
+                "clearance_seconds": 0.021138699083931806,
+                "unknown_seconds": 2.7018094262453953,
+                "deviation_seconds": 2.279948816402689,
+                "length_m": 26.75817418419772,
+                "ascent_m": 0.0,
+                "minimum_observed_clearance_m": 1.701216678781474,
+                "unknown_fraction": 0.5111111111111111,
+                "total": 23.10829168828102,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9094.294200118,
+                  "scan_received": 9093.703554108,
+                  "scan_age_at_evaluation": 0.5906460099995456,
+                  "scan_age_now": 2.22163123899918
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 23.10829168828102
+              }
+            },
+            {
+              "strategy": "SIDE_LEFT",
+              "side": "SIDE_LEFT",
+              "cost": 23.183,
+              "incumbent": false,
+              "unknown_fraction": 0.511,
+              "metrics": {
+                "motion_seconds": 18.02440308341216,
+                "entry_seconds": 0.1405011903769475,
+                "clearance_seconds": 0.09083608492709552,
+                "unknown_seconds": 2.6583708894589293,
+                "deviation_seconds": 2.2691886085480664,
+                "length_m": 26.551371792591627,
+                "ascent_m": 0.0,
+                "minimum_observed_clearance_m": 1.6275852282110481,
+                "unknown_fraction": 0.5112359550561798,
+                "total": 23.1832998567232,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9094.294200118,
+                  "scan_received": 9093.703554108,
+                  "scan_age_at_evaluation": 0.5906460099995456,
+                  "scan_age_now": 1.468599224999707
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 23.1832998567232
+              }
+            }
+          ],
+          "elapsed": 55.168
+        },
+        {
+          "event": "execution_state",
+          "strategy": "OVER",
+          "stage": "TRANSIT",
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.036783995119914814,
+          "clearance": 1.6109142305189967,
+          "continued_corridor": false,
+          "elapsed": 55.495
+        }
+      ]
+    },
+    {
+      "site": "pillar",
+      "x_retreat_m": 0.1553955078125,
+      "peak": [
+        97.288,
+        77.14744567871094,
+        -10.951788902282715,
+        13.048370361328125
+      ],
+      "valley": [
+        99.876,
+        76.99205017089844,
+        -11.332435607910156,
+        13.077239990234375
+      ],
+      "events": [
+        {
+          "event": "execution_state",
+          "strategy": "SIDE_RIGHT",
+          "stage": "SIDE_RIGHT",
+          "state": "BRAKE",
+          "reason": "occupied",
+          "stop_distance": 0.8600834729538673,
+          "clearance": 0.7752467806835527,
+          "continued_corridor": false,
+          "elapsed": 96.381
+        },
+        {
+          "event": "execution_hold",
+          "reason": "occupied",
+          "clearance": 0.7752467806835527,
+          "elapsed": 96.388
+        },
+        {
+          "event": "execution_state",
+          "strategy": "SIDE_RIGHT",
+          "stage": "SIDE_RIGHT",
+          "state": "BRAKE",
+          "reason": "braking_distance",
+          "stop_distance": 0.8600177808912266,
+          "clearance": 0.7695635235357422,
+          "continued_corridor": false,
+          "elapsed": 96.59
+        },
+        {
+          "event": "execution_state",
+          "strategy": "SIDE_RIGHT",
+          "stage": "SIDE_RIGHT",
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.36548330511583327,
+          "clearance": 0.6524418848705067,
+          "continued_corridor": false,
+          "elapsed": 96.889
+        },
+        {
+          "event": "decision",
+          "strategy": "SIDE_RIGHT",
+          "position": [
+            76.41178131103516,
+            -11.201684951782227,
+            13.0185546875
+          ],
+          "rejoin": [
+            83.82975482328256,
+            -8.61801217809447,
+            13.0
+          ],
+          "submission_position": [
+            77.13420867919922,
+            -10.958564758300781,
+            13.04705810546875
+          ],
+          "submission_map_version": 235,
+          "diagnostics": {
+            "map_version_start": 231,
+            "map_version_end": 231,
+            "rejected": [
+              {
+                "strategy": "SIDE_LEFT",
+                "reason": "search_no_path"
+              }
+            ],
+            "openings": [],
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9137.564975487,
+              "scan_received": 9137.12905088,
+              "scan_age_at_evaluation": 0.4359246069998335,
+              "scan_age_now": 0.45106920699981856
+            },
+            "connector": 0.800000000000006,
+            "committed_prefix_m": 0.0,
+            "planning_origin": [
+              77.13161283686263,
+              -11.550744508913816,
+              13.0185546875
+            ],
+            "position": [
+              76.41178131103516,
+              -11.201684951782227,
+              13.0185546875
+            ],
+            "rejoin": [
+              83.82975482328256,
+              -8.61801217809447,
+              13.0
+            ],
+            "previous_strategy": "SIDE_RIGHT",
+            "initial_route_forward": [
+              0.9947572159855901,
+              -0.10226476052188288
+            ]
+          },
+          "side": "SIDE_RIGHT",
+          "previous_side": "SIDE_RIGHT",
+          "selection_reason": "retain_side",
+          "candidates": [
+            {
+              "strategy": "SIDE_RIGHT",
+              "side": "SIDE_RIGHT",
+              "cost": 8.503,
+              "incumbent": false,
+              "unknown_fraction": 0.0,
+              "metrics": {
+                "motion_seconds": 5.8864017105167115,
+                "entry_seconds": 0.7123120137670604,
+                "clearance_seconds": 1.8112750234297597,
+                "unknown_seconds": 0.0,
+                "deviation_seconds": 0.09345886937625622,
+                "length_m": 8.230187130966561,
+                "ascent_m": 0.0,
+                "minimum_observed_clearance_m": 0.8545016062967601,
+                "unknown_fraction": 0.0,
+                "total": 8.503447617089789,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9137.564975487,
+                  "scan_received": 9137.12905088,
+                  "scan_age_at_evaluation": 0.4359246069998335,
+                  "scan_age_now": 0.8938866130010865
+                },
+                "switch_seconds": 1.0,
+                "selection_total": 9.503447617089789
+              }
+            },
+            {
+              "strategy": "OVER",
+              "side": null,
+              "cost": 18.136,
+              "incumbent": false,
+              "unknown_fraction": 0.0,
+              "metrics": {
+                "motion_seconds": 12.959228292736649,
+                "entry_seconds": 0.7123120137670604,
+                "clearance_seconds": 4.310181986094426,
+                "unknown_seconds": 0.0,
+                "deviation_seconds": 0.15470284550701296,
+                "length_m": 14.220722608543731,
+                "ascent_m": 4.4814453125,
+                "minimum_observed_clearance_m": 0.8545016062967601,
+                "unknown_fraction": 0.0,
+                "total": 18.136425138105146,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9137.564975487,
+                  "scan_received": 9137.12905088,
+                  "scan_age_at_evaluation": 0.4359246069998335,
+                  "scan_age_now": 1.363848720000533
+                },
+                "switch_seconds": 1.0,
+                "selection_total": 19.136425138105146
+              }
+            }
+          ],
+          "elapsed": 97.094
+        }
+      ]
+    },
+    {
+      "site": "wall4",
+      "x_retreat_m": 1.1015167236328125,
+      "peak": [
+        171.908,
+        164.4111785888672,
+        -7.7763895988464355,
+        13.074066162109375
+      ],
+      "valley": [
+        173.945,
+        163.30966186523438,
+        -7.832376003265381,
+        13.018218994140625
+      ],
+      "events": [
+        {
+          "event": "candidate_submission_rejected",
+          "strategy": "OVER",
+          "reason": "latest_geometry_or_visibility",
+          "map_version": 519,
+          "planning_map_version": 516,
+          "observation_clock": {
+            "clock": "live",
+            "evaluation_time": 9212.281439943,
+            "scan_received": 9211.87484954,
+            "scan_age_at_evaluation": 0.40659040300124616,
+            "scan_age_now": 0.40659040300124616
+          },
+          "elapsed": 170.853
+        },
+        {
+          "event": "execution_state",
+          "strategy": "TRACK",
+          "stage": "TRACK",
+          "state": "BRAKE",
+          "reason": "replanning",
+          "stop_distance": 1.5769828989247288,
+          "clearance": 7.81011074296139,
+          "continued_corridor": false,
+          "elapsed": 171.091
+        },
+        {
+          "event": "execution_hold",
+          "reason": "replanning",
+          "clearance": 7.81011074296139,
+          "elapsed": 171.124
+        },
+        {
+          "event": "candidate_submission_rejected",
+          "strategy": "OVER",
+          "reason": "latest_geometry_or_visibility",
+          "map_version": 521,
+          "planning_map_version": 519,
+          "observation_clock": {
+            "clock": "live",
+            "evaluation_time": 9213.054434748,
+            "scan_received": 9212.686179945,
+            "scan_age_at_evaluation": 0.36825480300103663,
+            "scan_age_now": 0.36825480300103663
+          },
+          "elapsed": 171.626
+        },
+        {
+          "event": "decision",
+          "strategy": "OVER",
+          "position": [
+            164.35098266601562,
+            -7.772913932800293,
+            13.072418212890625
+          ],
+          "rejoin": [
+            180.43250418175182,
+            -6.887779765821898,
+            13.0
+          ],
+          "submission_position": [
+            163.52304077148438,
+            -7.847314357757568,
+            13.0191650390625
+          ],
+          "submission_map_version": 526,
+          "diagnostics": {
+            "map_version_start": 521,
+            "map_version_end": 521,
+            "rejected": [],
+            "openings": [],
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9213.077411248,
+              "scan_received": 9212.686179945,
+              "scan_age_at_evaluation": 0.39123130299958575,
+              "scan_age_now": 0.4154529030001868
+            },
+            "connector": 2.0000000000000004,
+            "committed_prefix_m": 2.0000000000000004,
+            "planning_origin": [
+              166.3358571437457,
+              -7.677191999950241,
+              13.0
+            ],
+            "position": [
+              164.35098266601562,
+              -7.772913932800293,
+              13.072418212890625
+            ],
+            "rejoin": [
+              180.43250418175182,
+              -6.887779765821898,
+              13.0
+            ],
+            "previous_strategy": "TRACK",
+            "initial_route_forward": [
+              0.9984356783245656,
+              0.05591239798617558
+            ]
+          },
+          "side": null,
+          "previous_side": null,
+          "selection_reason": "lowest_cost",
+          "candidates": [
+            {
+              "strategy": "OVER",
+              "side": null,
+              "cost": 13.135,
+              "incumbent": false,
+              "unknown_fraction": 0.328,
+              "metrics": {
+                "motion_seconds": 11.611572857372973,
+                "entry_seconds": 0.24174119868747304,
+                "clearance_seconds": 0.09393274841502502,
+                "unknown_seconds": 1.1853148418155106,
+                "deviation_seconds": 0.002829870858562916,
+                "length_m": 17.258624813124847,
+                "ascent_m": 2.5000000000000053,
+                "minimum_observed_clearance_m": 1.5772090648830466,
+                "unknown_fraction": 0.3275862068965517,
+                "total": 13.135391517149545,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9213.077411248,
+                  "scan_received": 9212.686179945,
+                  "scan_age_at_evaluation": 0.39123130299958575,
+                  "scan_age_now": 1.8428360130001238
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 13.135391517149545
+              }
+            },
+            {
+              "strategy": "SIDE_LEFT",
+              "side": "SIDE_LEFT",
+              "cost": 21.964,
+              "incumbent": false,
+              "unknown_fraction": 0.497,
+              "metrics": {
+                "motion_seconds": 16.820291412062453,
+                "entry_seconds": 0.24174119868747304,
+                "clearance_seconds": 0.15225347198868672,
+                "unknown_seconds": 2.6810478625347565,
+                "deviation_seconds": 2.068465164150098,
+                "length_m": 24.624460996140805,
+                "ascent_m": 0.0,
+                "minimum_observed_clearance_m": 1.5655625244151836,
+                "unknown_fraction": 0.49696969696969695,
+                "total": 21.963799109423466,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9213.077411248,
+                  "scan_received": 9212.686179945,
+                  "scan_age_at_evaluation": 0.39123130299958575,
+                  "scan_age_now": 1.201026909000575
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 21.963799109423466
+              }
+            },
+            {
+              "strategy": "SIDE_RIGHT",
+              "side": "SIDE_RIGHT",
+              "cost": 22.063,
+              "incumbent": false,
+              "unknown_fraction": 0.497,
+              "metrics": {
+                "motion_seconds": 16.851390478735752,
+                "entry_seconds": 0.24174119868747304,
+                "clearance_seconds": 0.20493680805045883,
+                "unknown_seconds": 2.6827233459759876,
+                "deviation_seconds": 2.0822076359692105,
+                "length_m": 24.630666517857538,
+                "ascent_m": 0.0,
+                "minimum_observed_clearance_m": 1.5692434647645832,
+                "unknown_fraction": 0.49696969696969695,
+                "total": 22.06299946741888,
+                "observation_clock": {
+                  "clock": "planning_snapshot",
+                  "evaluation_time": 9213.077411248,
+                  "scan_received": 9212.686179945,
+                  "scan_age_at_evaluation": 0.39123130299958575,
+                  "scan_age_now": 1.7929119130003528
+                },
+                "switch_seconds": 0.0,
+                "selection_total": 22.06299946741888
+              }
+            }
+          ],
+          "elapsed": 173.138
+        },
+        {
+          "event": "execution_state",
+          "strategy": "OVER",
+          "stage": "APPROACH",
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.42697134387417557,
+          "clearance": 7.599944466694941,
+          "continued_corridor": false,
+          "elapsed": 173.391
+        }
+      ]
+    }
+  ],
+  "pillar": {
+    "center_xy": [
+      76.96824464201744,
+      -7.912623280955064
+    ],
+    "radius_m": 2.5,
+    "old_planned_min_reference_clearance_m": 0.41689076271288084,
+    "old_planned_min_shell_clearance_m": 0.06689076271288086,
+    "closest_planned_point": [
+      77.92416011403301,
+      -10.668431208217225,
+      13.0
+    ],
+    "first_submitted_old_route_points": [
+      [
+        69.94760131835938,
+        -7.195342063903809,
+        13.02032470703125
+      ],
+      [
+        70.01648825693847,
+        -7.284429446087598,
+        13.0
+      ],
+      [
+        70.1299320382166,
+        -7.382564600284877,
+        13.0
+      ],
+      [
+        70.2433758194947,
+        -7.480699754482156,
+        13.0
+      ],
+      [
+        70.35681960077281,
+        -7.578834908679436,
+        13.0
+      ]
+    ],
+    "first_submitted_new_route_points": [
+      [
+        77.13420867919922,
+        -10.958564758300781,
+        13.04705810546875
+      ],
+      [
+        76.97165027556764,
+        -11.47317571844013,
+        13.0185546875
+      ],
+      [
+        77.05163155621513,
+        -11.511960113676972,
+        13.0185546875
+      ],
+      [
+        77.13161283686263,
+        -11.550744508913816,
+        13.0185546875
+      ],
+      [
+        77.2813975638958,
+        -11.558382589706907,
+        13.016065657689044
+      ]
+    ],
+    "new_first_segment_delta": [
+      -0.16255840363157859,
+      -0.5146109601393487,
+      -0.02850341796875
+    ],
+    "initial_comparison": {
+      "event": "candidate_comparison",
+      "comparison": 18,
+      "map_version": 199,
+      "position": [
+        67.91361236572266,
+        -6.989870071411133,
+        13.019989013671875
+      ],
+      "rejoin": [
+        83.82975482328256,
+        -8.61801217809447,
+        13.0
+      ],
+      "reason": "lowest_cost",
+      "selected": {
+        "strategy": "SIDE_RIGHT",
+        "side": "SIDE_RIGHT",
+        "cost": 14.115,
+        "incumbent": false,
+        "unknown_fraction": 0.364,
+        "metrics": {
+          "motion_seconds": 11.83433142912719,
+          "entry_seconds": 0.09517309393314129,
+          "clearance_seconds": 0.33966000319257567,
+          "unknown_seconds": 1.2702416229873241,
+          "deviation_seconds": 0.5754227702702862,
+          "length_m": 17.83195343979691,
+          "ascent_m": 0.0,
+          "minimum_observed_clearance_m": 1.4816657261040376,
+          "unknown_fraction": 0.36363636363636365,
+          "total": 14.114828919510517,
+          "observation_clock": {
+            "clock": "planning_snapshot",
+            "evaluation_time": 9128.524263682,
+            "scan_received": 9128.127814272,
+            "scan_age_at_evaluation": 0.3964494100000593,
+            "scan_age_now": 1.4024149340002623
+          },
+          "switch_seconds": 0.0,
+          "selection_total": 14.114828919510517
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "side": "SIDE_RIGHT",
+          "cost": 14.115,
+          "incumbent": false,
+          "unknown_fraction": 0.364,
+          "metrics": {
+            "motion_seconds": 11.83433142912719,
+            "entry_seconds": 0.09517309393314129,
+            "clearance_seconds": 0.33966000319257567,
+            "unknown_seconds": 1.2702416229873241,
+            "deviation_seconds": 0.5754227702702862,
+            "length_m": 17.83195343979691,
+            "ascent_m": 0.0,
+            "minimum_observed_clearance_m": 1.4816657261040376,
+            "unknown_fraction": 0.36363636363636365,
+            "total": 14.114828919510517,
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9128.524263682,
+              "scan_received": 9128.127814272,
+              "scan_age_at_evaluation": 0.3964494100000593,
+              "scan_age_now": 1.4024149340002623
+            },
+            "switch_seconds": 0.0,
+            "selection_total": 14.114828919510517
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 14.365,
+          "incumbent": false,
+          "unknown_fraction": 0.347,
+          "metrics": {
+            "motion_seconds": 12.298882000222987,
+            "entry_seconds": 0.09517309393314129,
+            "clearance_seconds": 0.05060529718067942,
+            "unknown_seconds": 1.2373318048092865,
+            "deviation_seconds": 0.6833930223859519,
+            "length_m": 18.26244430577219,
+            "ascent_m": 0.0,
+            "minimum_observed_clearance_m": 1.6334352481867949,
+            "unknown_fraction": 0.3467741935483871,
+            "total": 14.365385218532046,
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9128.524263682,
+              "scan_received": 9128.127814272,
+              "scan_age_at_evaluation": 0.3964494100000593,
+              "scan_age_now": 0.8892064219999156
+            },
+            "switch_seconds": 0.0,
+            "selection_total": 14.365385218532046
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 28.939,
+          "incumbent": false,
+          "unknown_fraction": 0.543,
+          "metrics": {
+            "motion_seconds": 24.171294555219028,
+            "entry_seconds": 0.09517309393314129,
+            "clearance_seconds": 0.5221405642468675,
+            "unknown_seconds": 4.147613833719123,
+            "deviation_seconds": 0.0032633555729246026,
+            "length_m": 27.579789905439362,
+            "ascent_m": 10.0,
+            "minimum_observed_clearance_m": 1.3928835399529285,
+            "unknown_fraction": 0.543010752688172,
+            "total": 28.939485402691083,
+            "observation_clock": {
+              "clock": "planning_snapshot",
+              "evaluation_time": 9128.524263682,
+              "scan_received": 9128.127814272,
+              "scan_age_at_evaluation": 0.3964494100000593,
+              "scan_age_now": 1.9350283469993883
+            },
+            "switch_seconds": 0.0,
+            "selection_total": 28.939485402691083
+          }
+        }
+      ],
+      "rejected": [],
+      "elapsed": 88.635
+    }
+  },
+  "caveat": "Raw scans/free voxels and failed-submission predicate detail were not saved. Two wall4 submissions report combined latest_geometry_or_visibility; exact rejecting subcheck cannot be recovered. Ground-truth CSV uses its own elapsed clock."
+}

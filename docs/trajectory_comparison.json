@@ -1,0 +1,34 @@
+{
+  "before": {
+    "run": "20261117_170106_399660_city_300_0",
+    "success": true,
+    "elapsed_s": 254.019,
+    "path_length_m": 274.83698101054756,
+    "minimum_clearance_m": 0.5362814908513179,
+    "goal_error_m": 0.658372927449179,
+    "decision_count": 12,
+    "execution_hold_count": 0,
+    "hover_seconds": 0.0,
+    "backwards_east_m": 0.0008309171049550445,
+    "heading_variation_deg": 920.8857340270614,
+    "acceleration_p95_m_s2": 1.4016602339479651,
+    "jerk_p95_m_s3": 3.162782777128698
+  },
+  "after": {
+    "run": "20261117_181309_618846_city_300_0",
+    "success": true,
+    "elapsed_s": 334.659,
+    "path_length_m": 281.78566472171156,
+    "minimum_clearance_m": 0.7071495587397877,
+    "goal_error_m": 0.6457356860253081,
+    "decision_count": 43,
+    "execution_hold_count": 2,
+    "hover_seconds": 17.7,
+    "backwards_east_m": 0.3713644733713082,
+    "heading_variation_deg": 876.4633883320637,
+    "acceleration_p95_m_s2": 0.5828911856133169,
+    "jerk_p95_m_s3": 1.1142119185250292
+  },
+  "method": "Ground-truth cruise segment z > cruise-0.4 m, before goal X-2 m; resample 10 Hz; position derivatives via 11-sample (1.1 s) cubic Savitzky-Golay; heading variation only where XY speed >0.3 m/s. Read-only offline evaluation.",
+  "same_geometry": true
+}

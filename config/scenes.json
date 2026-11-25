@@ -1,0 +1,43 @@
+{
+  "bounds": [-5, 50, -15, 15],
+  "start": [0, 0],
+  "goal": [46, 0],
+  "cruise_height": 2.0,
+  "max_height": 4.5,
+  "grid_resolution": 0.5,
+  "vehicle_radius": 0.35,
+  "safety_margin": 0.15,
+  "tracking_margin": 0.7,
+  "known_buildings": [
+    {"name": "office", "center": [18, 0], "size": [4, 5, 8]},
+    {"name": "warehouse", "center": [28, -10], "size": [8, 5, 7]},
+    {"name": "apartments", "center": [36, 10], "size": [10, 5, 9]}
+  ],
+  "cases": {
+    "empty": {"goal": [20, 0], "obstacles": []},
+    "wall_low": {"goal": [20, 0], "obstacles": [
+      {"kind": "wall", "center": [8, 0], "size": [0.8, 8, 2.5]}
+    ]},
+    "wall_high": {"goal": [20, 0], "obstacles": [
+      {"kind": "wall", "center": [8, 0], "size": [0.8, 8, 7]}
+    ]},
+    "building": {"goal": [20, 0], "obstacles": [
+      {"kind": "building", "center": [8, 0], "size": [2, 3, 7]}
+    ]},
+    "gate_open": {"goal": [20, 0], "obstacles": [
+      {"kind": "gate", "center": [8, 0], "width": 8, "height": 5,
+       "depth": 1, "opening_width": 3, "opening_bottom": 1, "opening_top": 4}
+    ]},
+    "gate_narrow": {"goal": [20, 0], "obstacles": [
+      {"kind": "gate", "center": [8, 0], "width": 8, "height": 5,
+       "depth": 1, "opening_width": 1, "opening_bottom": 1, "opening_top": 4}
+    ]},
+    "delivery": {"obstacles": [
+      {"kind": "wall", "center": [8, -1.7], "size": [0.8, 8, 2.5]},
+      {"kind": "building", "center": [27, -3], "size": [2, 3, 7]},
+      {"kind": "gate", "center": [38, -2.6], "width": 8, "height": 5,
+       "depth": 1, "opening_width": 3, "opening_bottom": 1, "opening_top": 4}
+    ]}
+  }
+}
+

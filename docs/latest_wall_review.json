@@ -1,0 +1,1861 @@
+{
+  "run": "/home/ros/urban_drone_demo/runs/20261118_114918_514747_city_300_0",
+  "source_matches": {
+    "local.py": true,
+    "trajectory.py": true,
+    "perception.py": true,
+    "mission.py": true,
+    "global_policy.py": true
+  },
+  "mission": {
+    "success": true,
+    "goal_reached": true,
+    "failure": null,
+    "disarmed": true,
+    "landed_state": 1,
+    "elapsed": 283.523,
+    "strategies": [
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "TRACK",
+      "SIDE_RIGHT",
+      "SIDE_RIGHT",
+      "SIDE_LEFT",
+      "PASS",
+      "PASS",
+      "PASS",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_LEFT",
+      "SIDE_RIGHT",
+      "PASS",
+      "PASS"
+    ],
+    "replans": 0,
+    "map_updates": 925,
+    "recoveries": 0,
+    "baseline": "full"
+  },
+  "caveat": "Geometry-only replay: all points treated visible and zero initial velocity. Raw scans and free-evidence arrays were not recorded. This does not prove that OVER was safe to execute in the actual flight; command_trace vx/vy/vz are command lead velocities, not MAVROS measured velocities.",
+  "geometry_counterfactual": [
+    {
+      "wall": 1,
+      "map_version": 73,
+      "elapsed": 52.455,
+      "position": [
+        29.950468063354492,
+        -3.081183910369873,
+        12.96380615234375
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "actual_over_rejection": {
+        "strategy": "OVER",
+        "reason": "unobserved_prefix",
+        "min_distance": 3.5765797279667058,
+        "point": [
+          31.680447241326895,
+          -3.258754043885577,
+          13.8459290981201
+        ],
+        "prior_safe": true
+      },
+      "counterfactual": [
+        {
+          "strategy": "OVER",
+          "length_m": 14.685455107508774,
+          "motion_zero_velocity_seconds": 9.64080543916378,
+          "ascent_m": 2.5361938476562518,
+          "maximum_height_m": 15.500000000000002,
+          "minimum_observed_clearance_m": 1.5545231729703217
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "length_m": 22.478847725968162,
+          "motion_zero_velocity_seconds": 14.901789823735603,
+          "ascent_m": 0.03619384765625,
+          "maximum_height_m": 13.0,
+          "minimum_observed_clearance_m": 1.6612195552061992
+        },
+        {
+          "strategy": "SIDE_RIGHT",
+          "length_m": 22.412933141619174,
+          "motion_zero_velocity_seconds": 14.752169179222541,
+          "ascent_m": 0.03619384765625,
+          "maximum_height_m": 13.0,
+          "minimum_observed_clearance_m": 1.4533626967777562
+        }
+      ]
+    },
+    {
+      "wall": 4,
+      "map_version": 573,
+      "elapsed": 191.445,
+      "position": [
+        165.54541015625,
+        -6.804132461547852,
+        12.9246826171875
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "actual_over_rejection": {
+        "strategy": "OVER",
+        "reason": "unobserved_prefix",
+        "min_distance": 4.7206805018994045,
+        "point": [
+          167.33704976584042,
+          -6.835377331586735,
+          13.693806318189433
+        ],
+        "prior_safe": true
+      },
+      "counterfactual": [
+        {
+          "strategy": "OVER",
+          "length_m": 13.63650633618082,
+          "motion_zero_velocity_seconds": 9.08981679381557,
+          "ascent_m": 2.5753173828125,
+          "maximum_height_m": 15.5,
+          "minimum_observed_clearance_m": 1.55930522694601
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "length_m": 20.816232317104657,
+          "motion_zero_velocity_seconds": 13.983806957644177,
+          "ascent_m": 0.0753173828125,
+          "maximum_height_m": 13.0,
+          "minimum_observed_clearance_m": 1.5357018922687964
+        },
+        {
+          "strategy": "SIDE_RIGHT",
+          "length_m": 22.713265194119273,
+          "motion_zero_velocity_seconds": 15.182485482155816,
+          "ascent_m": 0.0753173828125,
+          "maximum_height_m": 13.0,
+          "minimum_observed_clearance_m": 1.6801854250382147
+        }
+      ]
+    }
+  ],
+  "actual_candidate_comparisons": [
+    {
+      "event": "candidate_comparison",
+      "comparison": 1,
+      "map_version": 67,
+      "position": [
+        27.387371063232422,
+        -2.8288943767547607,
+        13.00262451171875
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "lowest_cost",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 21.312,
+        "incumbent": false,
+        "unknown_fraction": 0.503,
+        "metrics": {
+          "motion_seconds": 16.340339859306148,
+          "entry_seconds": 0.08470821466934364,
+          "clearance_seconds": 0.08193959719699864,
+          "unknown_seconds": 2.7321855467412943,
+          "deviation_seconds": 2.0731087355321933,
+          "length_m": 24.613934903230344,
+          "ascent_m": 0.0,
+          "minimum_observed_clearance_m": 1.6102945363284293,
+          "unknown_fraction": 0.503030303030303,
+          "total": 21.31228195344598,
+          "switch_seconds": 0.0,
+          "selection_total": 21.31228195344598
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 21.312,
+          "incumbent": false,
+          "unknown_fraction": 0.503,
+          "metrics": {
+            "motion_seconds": 16.340339859306148,
+            "entry_seconds": 0.08470821466934364,
+            "clearance_seconds": 0.08193959719699864,
+            "unknown_seconds": 2.7321855467412943,
+            "deviation_seconds": 2.0731087355321933,
+            "length_m": 24.613934903230344,
+            "ascent_m": 0.0,
+            "minimum_observed_clearance_m": 1.6102945363284293,
+            "unknown_fraction": 0.503030303030303,
+            "total": 21.31228195344598,
+            "switch_seconds": 0.0,
+            "selection_total": 21.31228195344598
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 6.153176625415981,
+          "point": [
+            29.377805703467708,
+            -3.020148249889204,
+            13.0
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 6.153176625415981,
+          "point": [
+            29.377805703467708,
+            -3.020148249889204,
+            13.0
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 50.483
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 2,
+      "map_version": 73,
+      "position": [
+        29.950468063354492,
+        -3.081183910369873,
+        12.96380615234375
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 20.27,
+        "incumbent": false,
+        "unknown_fraction": 0.477,
+        "metrics": {
+          "motion_seconds": 14.38056936056778,
+          "entry_seconds": 1.4827851988672938,
+          "clearance_seconds": 0.058411349791199614,
+          "unknown_seconds": 2.2475107934093423,
+          "deviation_seconds": 2.1010814506220634,
+          "length_m": 22.478847725968162,
+          "ascent_m": 0.03619384765625,
+          "minimum_observed_clearance_m": 1.6612195552061992,
+          "unknown_fraction": 0.4768211920529801,
+          "total": 20.27035815325768,
+          "switch_seconds": 1.0,
+          "selection_total": 21.27035815325768
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 20.27,
+          "incumbent": false,
+          "unknown_fraction": 0.477,
+          "metrics": {
+            "motion_seconds": 14.38056936056778,
+            "entry_seconds": 1.4827851988672938,
+            "clearance_seconds": 0.058411349791199614,
+            "unknown_seconds": 2.2475107934093423,
+            "deviation_seconds": 2.1010814506220634,
+            "length_m": 22.478847725968162,
+            "ascent_m": 0.03619384765625,
+            "minimum_observed_clearance_m": 1.6612195552061992,
+            "unknown_fraction": 0.4768211920529801,
+            "total": 20.27035815325768,
+            "switch_seconds": 1.0,
+            "selection_total": 21.27035815325768
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 4.3244796568282515,
+          "point": [
+            30.68210645891286,
+            -4.888710233140151,
+            12.971144451692721
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 3.5765797279667058,
+          "point": [
+            31.680447241326895,
+            -3.258754043885577,
+            13.8459290981201
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 52.455
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 3,
+      "map_version": 80,
+      "position": [
+        30.986066818237305,
+        -1.5047950744628906,
+        12.9716796875
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 17.164,
+        "incumbent": false,
+        "unknown_fraction": 0.529,
+        "metrics": {
+          "motion_seconds": 12.992436530574455,
+          "entry_seconds": 0.2559075153607816,
+          "clearance_seconds": 0.024749875827192104,
+          "unknown_seconds": 2.223121584022167,
+          "deviation_seconds": 1.6673277010861662,
+          "length_m": 20.543135995851316,
+          "ascent_m": 0.0283203125,
+          "minimum_observed_clearance_m": 1.6969998575356524,
+          "unknown_fraction": 0.5289855072463768,
+          "total": 17.163543206870763,
+          "switch_seconds": 1.0,
+          "selection_total": 18.163543206870763
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 17.164,
+          "incumbent": false,
+          "unknown_fraction": 0.529,
+          "metrics": {
+            "motion_seconds": 12.992436530574455,
+            "entry_seconds": 0.2559075153607816,
+            "clearance_seconds": 0.024749875827192104,
+            "unknown_seconds": 2.223121584022167,
+            "deviation_seconds": 1.6673277010861662,
+            "length_m": 20.543135995851316,
+            "ascent_m": 0.0283203125,
+            "minimum_observed_clearance_m": 1.6969998575356524,
+            "unknown_fraction": 0.5289855072463768,
+            "total": 17.163543206870763,
+            "switch_seconds": 1.0,
+            "selection_total": 18.163543206870763
+          }
+        },
+        {
+          "strategy": "SIDE_RIGHT",
+          "side": "SIDE_RIGHT",
+          "cost": 23.669,
+          "incumbent": false,
+          "unknown_fraction": 0.366,
+          "metrics": {
+            "motion_seconds": 18.35533038154447,
+            "entry_seconds": 0.2559075153607816,
+            "clearance_seconds": 0.3923897888751635,
+            "unknown_seconds": 2.086069230595478,
+            "deviation_seconds": 2.579235418169048,
+            "length_m": 27.21972487873696,
+            "ascent_m": 0.0283203125,
+            "minimum_observed_clearance_m": 1.4759264918084365,
+            "unknown_fraction": 0.366120218579235,
+            "total": 23.66893233454494,
+            "switch_seconds": 3.0,
+            "selection_total": 26.66893233454494
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 3.583361526796585,
+          "point": [
+            32.03305375014034,
+            0.19721567814521135,
+            12.979522925406332
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 53.989
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 4,
+      "map_version": 85,
+      "position": [
+        32.071998596191406,
+        0.36780136823654175,
+        12.936004638671875
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 17.031,
+        "incumbent": false,
+        "unknown_fraction": 0.59,
+        "metrics": {
+          "motion_seconds": 12.516541863969394,
+          "entry_seconds": 0.6912141345424305,
+          "clearance_seconds": 0.4599796718814157,
+          "unknown_seconds": 2.1843763112220556,
+          "deviation_seconds": 1.1785103936166328,
+          "length_m": 17.96293068080319,
+          "ascent_m": 0.063995361328125,
+          "minimum_observed_clearance_m": 1.4437195471254083,
+          "unknown_fraction": 0.5901639344262295,
+          "total": 17.03062237523193,
+          "switch_seconds": 1.0,
+          "selection_total": 18.03062237523193
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 17.031,
+          "incumbent": false,
+          "unknown_fraction": 0.59,
+          "metrics": {
+            "motion_seconds": 12.516541863969394,
+            "entry_seconds": 0.6912141345424305,
+            "clearance_seconds": 0.4599796718814157,
+            "unknown_seconds": 2.1843763112220556,
+            "deviation_seconds": 1.1785103936166328,
+            "length_m": 17.96293068080319,
+            "ascent_m": 0.063995361328125,
+            "minimum_observed_clearance_m": 1.4437195471254083,
+            "unknown_fraction": 0.5901639344262295,
+            "total": 17.03062237523193,
+            "switch_seconds": 1.0,
+            "selection_total": 18.03062237523193
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 2.373531752763211,
+          "point": [
+            33.17745482900819,
+            -0.41665290741814465,
+            12.99024747373541
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 2.5527118135257725,
+          "point": [
+            33.2979475167012,
+            1.9330323091977983,
+            13.105478129666887
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 56.059
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 5,
+      "map_version": 93,
+      "position": [
+        33.691871643066406,
+        2.6954505443573,
+        12.9573974609375
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 14.562,
+        "incumbent": false,
+        "unknown_fraction": 0.686,
+        "metrics": {
+          "motion_seconds": 10.569102482987686,
+          "entry_seconds": 0.7694639902933808,
+          "clearance_seconds": 0.5393087614922063,
+          "unknown_seconds": 2.0945743865484685,
+          "deviation_seconds": 0.5900316423870906,
+          "length_m": 15.138368736254787,
+          "ascent_m": 0.0426025390625,
+          "minimum_observed_clearance_m": 1.3964678187844222,
+          "unknown_fraction": 0.6862745098039216,
+          "total": 14.562481263708833,
+          "switch_seconds": 1.0,
+          "selection_total": 15.562481263708833
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 14.562,
+          "incumbent": false,
+          "unknown_fraction": 0.686,
+          "metrics": {
+            "motion_seconds": 10.569102482987686,
+            "entry_seconds": 0.7694639902933808,
+            "clearance_seconds": 0.5393087614922063,
+            "unknown_seconds": 2.0945743865484685,
+            "deviation_seconds": 0.5900316423870906,
+            "length_m": 15.138368736254787,
+            "ascent_m": 0.0426025390625,
+            "minimum_observed_clearance_m": 1.3964678187844222,
+            "unknown_fraction": 0.6862745098039216,
+            "total": 14.562481263708833,
+            "switch_seconds": 1.0,
+            "selection_total": 15.562481263708833
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 1.4531455318940696,
+          "point": [
+            34.89182664267592,
+            3.8752053656474916,
+            12.997952738596021
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 1.4745398795429059,
+          "point": [
+            35.04973974144937,
+            4.130280514719247,
+            12.997604081472995
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 58.737
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 6,
+      "map_version": 103,
+      "position": [
+        35.1096305847168,
+        4.218827247619629,
+        12.93243408203125
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_current",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 13.382,
+        "incumbent": true,
+        "unknown_fraction": 0.648,
+        "metrics": {
+          "motion_seconds": 8.90031110427724,
+          "entry_seconds": 0.0970780550636373,
+          "clearance_seconds": 2.509435483111398,
+          "unknown_seconds": 1.6524558568749113,
+          "deviation_seconds": 0.22274243468808647,
+          "length_m": 13.045653475043057,
+          "ascent_m": 0.06756591796875,
+          "minimum_observed_clearance_m": 0.7514943012390015,
+          "unknown_fraction": 0.6477272727272727,
+          "total": 13.382022934015273,
+          "switch_seconds": 0.0,
+          "selection_total": 13.382022934015273
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 13.465,
+          "incumbent": false,
+          "unknown_fraction": 0.565,
+          "metrics": {
+            "motion_seconds": 10.45264945101307,
+            "entry_seconds": 0.14311276230540385,
+            "clearance_seconds": 0.9971198577082567,
+            "unknown_seconds": 1.4946990995230032,
+            "deviation_seconds": 0.37722451818672176,
+            "length_m": 13.585163756506164,
+            "ascent_m": 0.06756591796875,
+            "minimum_observed_clearance_m": 1.2435352585748796,
+            "unknown_fraction": 0.5652173913043478,
+            "total": 13.464805688736455,
+            "switch_seconds": 1.0,
+            "selection_total": 14.464805688736455
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 16.879,
+          "incumbent": false,
+          "unknown_fraction": 0.594,
+          "metrics": {
+            "motion_seconds": 12.555437281389654,
+            "entry_seconds": 0.14311276230540385,
+            "clearance_seconds": 1.9142069260203876,
+            "unknown_seconds": 1.9510785815835163,
+            "deviation_seconds": 0.3148153052650668,
+            "length_m": 14.946362224204071,
+            "ascent_m": 1.9745560245777707,
+            "minimum_observed_clearance_m": 1.2185717394186413,
+            "unknown_fraction": 0.594059405940594,
+            "total": 16.87865085656403,
+            "switch_seconds": 1.0,
+            "selection_total": 17.87865085656403
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 13.382,
+          "incumbent": true,
+          "unknown_fraction": 0.648,
+          "metrics": {
+            "motion_seconds": 8.90031110427724,
+            "entry_seconds": 0.0970780550636373,
+            "clearance_seconds": 2.509435483111398,
+            "unknown_seconds": 1.6524558568749113,
+            "deviation_seconds": 0.22274243468808647,
+            "length_m": 13.045653475043057,
+            "ascent_m": 0.06756591796875,
+            "minimum_observed_clearance_m": 0.7514943012390015,
+            "unknown_fraction": 0.6477272727272727,
+            "total": 13.382022934015273,
+            "switch_seconds": 0.0,
+            "selection_total": 13.382022934015273
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 60.102
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 7,
+      "map_version": 108,
+      "position": [
+        35.73928451538086,
+        4.685912132263184,
+        12.929107666015625
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 9.995,
+        "incumbent": false,
+        "unknown_fraction": 0.437,
+        "metrics": {
+          "motion_seconds": 8.383870381214273,
+          "entry_seconds": 0.051878064249009724,
+          "clearance_seconds": 0.2579575183539654,
+          "unknown_seconds": 1.0813446137104983,
+          "deviation_seconds": 0.22004305133316154,
+          "length_m": 12.760210688923808,
+          "ascent_m": 0.070892333984375,
+          "minimum_observed_clearance_m": 1.4829963051756268,
+          "unknown_fraction": 0.4367816091954023,
+          "total": 9.995093628860907,
+          "switch_seconds": 1.0,
+          "selection_total": 10.995093628860907
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 9.995,
+          "incumbent": false,
+          "unknown_fraction": 0.437,
+          "metrics": {
+            "motion_seconds": 8.383870381214273,
+            "entry_seconds": 0.051878064249009724,
+            "clearance_seconds": 0.2579575183539654,
+            "unknown_seconds": 1.0813446137104983,
+            "deviation_seconds": 0.22004305133316154,
+            "length_m": 12.760210688923808,
+            "ascent_m": 0.070892333984375,
+            "minimum_observed_clearance_m": 1.4829963051756268,
+            "unknown_fraction": 0.4367816091954023,
+            "total": 9.995093628860907,
+            "switch_seconds": 1.0,
+            "selection_total": 10.995093628860907
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 14.863,
+          "incumbent": false,
+          "unknown_fraction": 1.0,
+          "metrics": {
+            "motion_seconds": 10.30689832771973,
+            "entry_seconds": 0.6617536830358937,
+            "clearance_seconds": 0.28730508735519716,
+            "unknown_seconds": 3.6074144147019056,
+            "deviation_seconds": 6.209492839228353e-16,
+            "length_m": 14.39610648852514,
+            "ascent_m": 2.570892333984375,
+            "minimum_observed_clearance_m": 1.5501046653834525,
+            "unknown_fraction": 1.0,
+            "total": 14.863371512812728,
+            "switch_seconds": 1.0,
+            "selection_total": 15.863371512812728
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 61.78
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 8,
+      "map_version": 114,
+      "position": [
+        36.659427642822266,
+        4.4705305099487305,
+        12.942779541015625
+      ],
+      "rejoin": [
+        43.40651005974239,
+        -4.462351501468844,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 8.932,
+        "incumbent": false,
+        "unknown_fraction": 0.0,
+        "metrics": {
+          "motion_seconds": 7.870470005476472,
+          "entry_seconds": 0.36258753339108873,
+          "clearance_seconds": 0.5175068688505231,
+          "unknown_seconds": 0.0,
+          "deviation_seconds": 0.1814203874983188,
+          "length_m": 11.969701290838952,
+          "ascent_m": 0.057220458984375,
+          "minimum_observed_clearance_m": 1.3279685261387066,
+          "unknown_fraction": 0.0,
+          "total": 8.931984795216403,
+          "switch_seconds": 1.0,
+          "selection_total": 9.931984795216403
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 8.932,
+          "incumbent": false,
+          "unknown_fraction": 0.0,
+          "metrics": {
+            "motion_seconds": 7.870470005476472,
+            "entry_seconds": 0.36258753339108873,
+            "clearance_seconds": 0.5175068688505231,
+            "unknown_seconds": 0.0,
+            "deviation_seconds": 0.1814203874983188,
+            "length_m": 11.969701290838952,
+            "ascent_m": 0.057220458984375,
+            "minimum_observed_clearance_m": 1.3279685261387066,
+            "unknown_fraction": 0.0,
+            "total": 8.931984795216403,
+            "switch_seconds": 1.0,
+            "selection_total": 9.931984795216403
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 1.3243240799440659,
+          "point": [
+            36.659427642822266,
+            4.4705305099487305,
+            13.092779541015625
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 63.249
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 87,
+      "map_version": 563,
+      "position": [
+        162.02682495117188,
+        -7.936216354370117,
+        13.005218505859375
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "lowest_cost",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 17.843,
+        "incumbent": false,
+        "unknown_fraction": 0.447,
+        "metrics": {
+          "motion_seconds": 14.22100920286824,
+          "entry_seconds": 0.19520616669524846,
+          "clearance_seconds": 0.0002210776354561595,
+          "unknown_seconds": 2.18960476261937,
+          "deviation_seconds": 1.236532761050694,
+          "length_m": 20.86605941855956,
+          "ascent_m": 0.0,
+          "minimum_observed_clearance_m": 1.7861441726776361,
+          "unknown_fraction": 0.44680851063829785,
+          "total": 17.842573970869008,
+          "switch_seconds": 0.0,
+          "selection_total": 17.842573970869008
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 17.843,
+          "incumbent": false,
+          "unknown_fraction": 0.447,
+          "metrics": {
+            "motion_seconds": 14.22100920286824,
+            "entry_seconds": 0.19520616669524846,
+            "clearance_seconds": 0.0002210776354561595,
+            "unknown_seconds": 2.18960476261937,
+            "deviation_seconds": 1.236532761050694,
+            "length_m": 20.86605941855956,
+            "ascent_m": 0.0,
+            "minimum_observed_clearance_m": 1.7861441726776361,
+            "unknown_fraction": 0.44680851063829785,
+            "total": 17.842573970869008,
+            "switch_seconds": 0.0,
+            "selection_total": 17.842573970869008
+          }
+        },
+        {
+          "strategy": "SIDE_RIGHT",
+          "side": "SIDE_RIGHT",
+          "cost": 18.824,
+          "incumbent": false,
+          "unknown_fraction": 0.463,
+          "metrics": {
+            "motion_seconds": 14.797066431679394,
+            "entry_seconds": 0.19520616669524846,
+            "clearance_seconds": 0.060457581317523275,
+            "unknown_seconds": 2.3762260976426965,
+            "deviation_seconds": 1.394741114451065,
+            "length_m": 21.67656178474493,
+            "ascent_m": 0.0,
+            "minimum_observed_clearance_m": 1.634930926443542,
+            "unknown_fraction": 0.46258503401360546,
+            "total": 18.823697391785927,
+            "switch_seconds": 0.0,
+            "selection_total": 18.823697391785927
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 7.44530761114499,
+          "point": [
+            162.02682495117188,
+            -7.936216354370117,
+            13.005218505859375
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 188.012
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 88,
+      "map_version": 568,
+      "position": [
+        164.07278442382812,
+        -7.814671039581299,
+        12.94775390625
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 20.722,
+        "incumbent": false,
+        "unknown_fraction": 0.487,
+        "metrics": {
+          "motion_seconds": 14.824658599590595,
+          "entry_seconds": 1.1911603755962104,
+          "clearance_seconds": 0.3593478019832118,
+          "unknown_seconds": 2.3969904569222313,
+          "deviation_seconds": 1.950264392737633,
+          "length_m": 22.105772209440723,
+          "ascent_m": 0.05224609375,
+          "minimum_observed_clearance_m": 1.4927323502954002,
+          "unknown_fraction": 0.4866666666666667,
+          "total": 20.72242162682988,
+          "switch_seconds": 1.0,
+          "selection_total": 21.72242162682988
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 20.722,
+          "incumbent": false,
+          "unknown_fraction": 0.487,
+          "metrics": {
+            "motion_seconds": 14.824658599590595,
+            "entry_seconds": 1.1911603755962104,
+            "clearance_seconds": 0.3593478019832118,
+            "unknown_seconds": 2.3969904569222313,
+            "deviation_seconds": 1.950264392737633,
+            "length_m": 22.105772209440723,
+            "ascent_m": 0.05224609375,
+            "minimum_observed_clearance_m": 1.4927323502954002,
+            "unknown_fraction": 0.4866666666666667,
+            "total": 20.72242162682988,
+            "switch_seconds": 1.0,
+            "selection_total": 21.72242162682988
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 6.192483751395766,
+          "point": [
+            165.8584136526886,
+            -6.957190975181087,
+            13.0
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 6.520702184179459,
+          "point": [
+            165.5294917384651,
+            -6.455383866479385,
+            13.0
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 189.565
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 89,
+      "map_version": 573,
+      "position": [
+        165.54541015625,
+        -6.804132461547852,
+        12.9246826171875
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 17.338,
+        "incumbent": false,
+        "unknown_fraction": 0.457,
+        "metrics": {
+          "motion_seconds": 13.13948935690027,
+          "entry_seconds": 0.09773037129814034,
+          "clearance_seconds": 0.24465366427774732,
+          "unknown_seconds": 2.011522217110093,
+          "deviation_seconds": 1.8441319782601284,
+          "length_m": 20.816232317104657,
+          "ascent_m": 0.0753173828125,
+          "minimum_observed_clearance_m": 1.5357018922687964,
+          "unknown_fraction": 0.45714285714285713,
+          "total": 17.33752758784638,
+          "switch_seconds": 1.0,
+          "selection_total": 18.33752758784638
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 17.338,
+          "incumbent": false,
+          "unknown_fraction": 0.457,
+          "metrics": {
+            "motion_seconds": 13.13948935690027,
+            "entry_seconds": 0.09773037129814034,
+            "clearance_seconds": 0.24465366427774732,
+            "unknown_seconds": 2.011522217110093,
+            "deviation_seconds": 1.8441319782601284,
+            "length_m": 20.816232317104657,
+            "ascent_m": 0.0753173828125,
+            "minimum_observed_clearance_m": 1.5357018922687964,
+            "unknown_fraction": 0.45714285714285713,
+            "total": 17.33752758784638,
+            "switch_seconds": 1.0,
+            "selection_total": 18.33752758784638
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "unobserved_prefix",
+          "min_distance": 5.59939380147473,
+          "point": [
+            166.64196465694397,
+            -8.41654338067246,
+            12.938798384808022
+          ],
+          "prior_safe": true
+        },
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 4.7206805018994045,
+          "point": [
+            167.33704976584042,
+            -6.835377331586735,
+            13.693806318189433
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 191.445
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 90,
+      "map_version": 579,
+      "position": [
+        166.63870239257812,
+        -4.963229656219482,
+        12.964019775390625
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 17.684,
+        "incumbent": false,
+        "unknown_fraction": 0.481,
+        "metrics": {
+          "motion_seconds": 13.31020838435673,
+          "entry_seconds": 0.8934039849411738,
+          "clearance_seconds": 0.005351447310561469,
+          "unknown_seconds": 1.9037556290536697,
+          "deviation_seconds": 1.5713334818377958,
+          "length_m": 19.278625990608816,
+          "ascent_m": 0.05669853880094777,
+          "minimum_observed_clearance_m": 1.7443431158825895,
+          "unknown_fraction": 0.48091603053435117,
+          "total": 17.68405292749993,
+          "switch_seconds": 1.0,
+          "selection_total": 18.68405292749993
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 17.684,
+          "incumbent": false,
+          "unknown_fraction": 0.481,
+          "metrics": {
+            "motion_seconds": 13.31020838435673,
+            "entry_seconds": 0.8934039849411738,
+            "clearance_seconds": 0.005351447310561469,
+            "unknown_seconds": 1.9037556290536697,
+            "deviation_seconds": 1.5713334818377958,
+            "length_m": 19.278625990608816,
+            "ascent_m": 0.05669853880094777,
+            "minimum_observed_clearance_m": 1.7443431158825895,
+            "unknown_fraction": 0.48091603053435117,
+            "total": 17.68405292749993,
+            "switch_seconds": 1.0,
+            "selection_total": 18.68405292749993
+          }
+        },
+        {
+          "strategy": "SIDE_RIGHT",
+          "side": "SIDE_RIGHT",
+          "cost": 24.978,
+          "incumbent": false,
+          "unknown_fraction": 0.412,
+          "metrics": {
+            "motion_seconds": 18.437773710423638,
+            "entry_seconds": 0.8934039849411738,
+            "clearance_seconds": 0.6834901504421318,
+            "unknown_seconds": 2.4629908735598818,
+            "deviation_seconds": 2.4999534065976055,
+            "length_m": 26.149095971383367,
+            "ascent_m": 0.05669853880094777,
+            "minimum_observed_clearance_m": 1.4022464186656973,
+            "unknown_fraction": 0.4124293785310734,
+            "total": 24.97761212596443,
+            "switch_seconds": 3.0,
+            "selection_total": 27.97761212596443
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "OVER",
+          "reason": "unobserved_prefix",
+          "min_distance": 4.137155343065452,
+          "point": [
+            167.91404809719995,
+            -3.484358252699863,
+            12.956321289232804
+          ],
+          "prior_safe": true
+        }
+      ],
+      "elapsed": 192.715
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 91,
+      "map_version": 583,
+      "position": [
+        167.75836181640625,
+        -3.5220460891723633,
+        12.96807861328125
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "confirming_cost_improvement",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 18.478,
+        "incumbent": true,
+        "unknown_fraction": 1.0,
+        "metrics": {
+          "motion_seconds": 11.999465726501315,
+          "entry_seconds": 1.061236890201818,
+          "clearance_seconds": 0.004838213103832234,
+          "unknown_seconds": 4.19981300427546,
+          "deviation_seconds": 1.2124194027401356,
+          "length_m": 17.447448111299742,
+          "ascent_m": 0.04389808354300584,
+          "minimum_observed_clearance_m": 1.7443431158825895,
+          "unknown_fraction": 1.0,
+          "total": 18.47777323682256,
+          "switch_seconds": 0.0,
+          "selection_total": 18.47777323682256
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 13.215,
+          "incumbent": false,
+          "unknown_fraction": 0.237,
+          "metrics": {
+            "motion_seconds": 10.930205538889116,
+            "entry_seconds": 1.1353598881615308,
+            "clearance_seconds": 0.12930564039076953,
+            "unknown_seconds": 0.68183203057766,
+            "deviation_seconds": 0.33826938056455663,
+            "length_m": 14.055774662828473,
+            "ascent_m": 2.5438980835430076,
+            "minimum_observed_clearance_m": 1.550914850143125,
+            "unknown_fraction": 0.23711340206185566,
+            "total": 13.214972478583633,
+            "switch_seconds": 1.0,
+            "selection_total": 14.214972478583633
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 16.252,
+          "incumbent": false,
+          "unknown_fraction": 0.534,
+          "metrics": {
+            "motion_seconds": 11.865155857097589,
+            "entry_seconds": 1.1353598881615308,
+            "clearance_seconds": 0.13325271334584338,
+            "unknown_seconds": 1.9393037791021968,
+            "deviation_seconds": 1.1790897968542686,
+            "length_m": 17.22414323800899,
+            "ascent_m": 0.04389808354300584,
+            "minimum_observed_clearance_m": 1.5562770251331386,
+            "unknown_fraction": 0.5338983050847458,
+            "total": 16.25216203456143,
+            "switch_seconds": 1.0,
+            "selection_total": 17.25216203456143
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 18.478,
+          "incumbent": true,
+          "unknown_fraction": 1.0,
+          "metrics": {
+            "motion_seconds": 11.999465726501315,
+            "entry_seconds": 1.061236890201818,
+            "clearance_seconds": 0.004838213103832234,
+            "unknown_seconds": 4.19981300427546,
+            "deviation_seconds": 1.2124194027401356,
+            "length_m": 17.447448111299742,
+            "ascent_m": 0.04389808354300584,
+            "minimum_observed_clearance_m": 1.7443431158825895,
+            "unknown_fraction": 1.0,
+            "total": 18.47777323682256,
+            "switch_seconds": 0.0,
+            "selection_total": 18.47777323682256
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 194.098
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 92,
+      "map_version": 589,
+      "position": [
+        168.84725952148438,
+        -1.9027423858642578,
+        12.96282958984375
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_current",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 12.883,
+        "incumbent": true,
+        "unknown_fraction": 0.581,
+        "metrics": {
+          "motion_seconds": 10.159304303323246,
+          "entry_seconds": 0.08875443727674934,
+          "clearance_seconds": 0.004838213103832234,
+          "unknown_seconds": 1.806490632044817,
+          "deviation_seconds": 0.823700694037429,
+          "length_m": 15.442608656606135,
+          "ascent_m": 0.03717041015625,
+          "minimum_observed_clearance_m": 1.7443431158825895,
+          "unknown_fraction": 0.580952380952381,
+          "total": 12.883088279786074,
+          "switch_seconds": 0.0,
+          "selection_total": 12.883088279786074
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 11.998,
+          "incumbent": false,
+          "unknown_fraction": 0.212,
+          "metrics": {
+            "motion_seconds": 10.677311319376425,
+            "entry_seconds": 0.11747169310866794,
+            "clearance_seconds": 0.22967968267628966,
+            "unknown_seconds": 0.593811095047017,
+            "deviation_seconds": 0.37980461611059974,
+            "length_m": 14.502825467047147,
+            "ascent_m": 2.53717041015625,
+            "minimum_observed_clearance_m": 1.5506992592595363,
+            "unknown_fraction": 0.21212121212121213,
+            "total": 11.998078406319,
+            "switch_seconds": 1.0,
+            "selection_total": 12.998078406319
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 13.477,
+          "incumbent": false,
+          "unknown_fraction": 0.571,
+          "metrics": {
+            "motion_seconds": 10.677318520616119,
+            "entry_seconds": 0.11747169310866794,
+            "clearance_seconds": 0.04057114105891792,
+            "unknown_seconds": 1.7780355003692736,
+            "deviation_seconds": 0.8639815514939865,
+            "length_m": 15.360623112699503,
+            "ascent_m": 0.03717041015625,
+            "minimum_observed_clearance_m": 1.6566274853165157,
+            "unknown_fraction": 0.5714285714285714,
+            "total": 13.477378406646965,
+            "switch_seconds": 1.0,
+            "selection_total": 14.477378406646965
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 12.883,
+          "incumbent": true,
+          "unknown_fraction": 0.581,
+          "metrics": {
+            "motion_seconds": 10.159304303323246,
+            "entry_seconds": 0.08875443727674934,
+            "clearance_seconds": 0.004838213103832234,
+            "unknown_seconds": 1.806490632044817,
+            "deviation_seconds": 0.823700694037429,
+            "length_m": 15.442608656606135,
+            "ascent_m": 0.03717041015625,
+            "minimum_observed_clearance_m": 1.7443431158825895,
+            "unknown_fraction": 0.580952380952381,
+            "total": 12.883088279786074,
+            "switch_seconds": 0.0,
+            "selection_total": 12.883088279786074
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 195.656
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 93,
+      "map_version": 594,
+      "position": [
+        169.69993591308594,
+        -0.44534727931022644,
+        12.97760009765625
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_side",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 11.638,
+        "incumbent": false,
+        "unknown_fraction": 0.637,
+        "metrics": {
+          "motion_seconds": 9.057172012666815,
+          "entry_seconds": 0.16966644360758315,
+          "clearance_seconds": 0.14713482391464922,
+          "unknown_seconds": 1.7664505730980509,
+          "deviation_seconds": 0.4971169390720249,
+          "length_m": 13.488405318908008,
+          "ascent_m": 0.02239990234375,
+          "minimum_observed_clearance_m": 1.5494410870276136,
+          "unknown_fraction": 0.6373626373626373,
+          "total": 11.637540792359124,
+          "switch_seconds": 1.0,
+          "selection_total": 12.637540792359124
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 11.638,
+          "incumbent": false,
+          "unknown_fraction": 0.637,
+          "metrics": {
+            "motion_seconds": 9.057172012666815,
+            "entry_seconds": 0.16966644360758315,
+            "clearance_seconds": 0.14713482391464922,
+            "unknown_seconds": 1.7664505730980509,
+            "deviation_seconds": 0.4971169390720249,
+            "length_m": 13.488405318908008,
+            "ascent_m": 0.02239990234375,
+            "minimum_observed_clearance_m": 1.5494410870276136,
+            "unknown_fraction": 0.6373626373626373,
+            "total": 11.637540792359124,
+            "switch_seconds": 1.0,
+            "selection_total": 12.637540792359124
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 14.012,
+          "incumbent": false,
+          "unknown_fraction": 1.0,
+          "metrics": {
+            "motion_seconds": 9.02921870942826,
+            "entry_seconds": 1.559630087203672,
+            "clearance_seconds": 0.2632741456512949,
+            "unknown_seconds": 3.160226548299891,
+            "deviation_seconds": 2.0564353039816985e-15,
+            "length_m": 12.412089343580783,
+            "ascent_m": 2.522399902343757,
+            "minimum_observed_clearance_m": 1.5139741465532097,
+            "unknown_fraction": 1.0,
+            "total": 14.01234949058312,
+            "switch_seconds": 1.0,
+            "selection_total": 15.01234949058312
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 196.983
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 94,
+      "map_version": 600,
+      "position": [
+        170.40245056152344,
+        0.6734790802001953,
+        12.965087890625
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_current",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 11.957,
+        "incumbent": true,
+        "unknown_fraction": 0.634,
+        "metrics": {
+          "motion_seconds": 8.458105813067816,
+          "entry_seconds": 0.13139069935663608,
+          "clearance_seconds": 1.5480013937670236,
+          "unknown_seconds": 1.5275744179443216,
+          "deviation_seconds": 0.2917729548971242,
+          "length_m": 12.224210033070435,
+          "ascent_m": 0.034912109375,
+          "minimum_observed_clearance_m": 0.9941074760382708,
+          "unknown_fraction": 0.6341463414634146,
+          "total": 11.95684527903292,
+          "switch_seconds": 0.0,
+          "selection_total": 11.95684527903292
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 11.822,
+          "incumbent": false,
+          "unknown_fraction": 0.607,
+          "metrics": {
+            "motion_seconds": 8.921239459218086,
+            "entry_seconds": 0.5283406253694393,
+            "clearance_seconds": 0.4819355187545559,
+            "unknown_seconds": 1.5253558876379945,
+            "deviation_seconds": 0.36552715197362673,
+            "length_m": 12.497284975298793,
+            "ascent_m": 0.034912109375,
+            "minimum_observed_clearance_m": 1.3811901346527338,
+            "unknown_fraction": 0.6071428571428571,
+            "total": 11.822398642953702,
+            "switch_seconds": 1.0,
+            "selection_total": 12.822398642953702
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 13.779,
+          "incumbent": false,
+          "unknown_fraction": 0.387,
+          "metrics": {
+            "motion_seconds": 11.053386316449785,
+            "entry_seconds": 0.5283406253694393,
+            "clearance_seconds": 0.7270773971044023,
+            "unknown_seconds": 1.1338567653875118,
+            "deviation_seconds": 0.33629812921224334,
+            "length_m": 13.814084209558075,
+            "ascent_m": 2.0349121093750053,
+            "minimum_observed_clearance_m": 1.365537878849124,
+            "unknown_fraction": 0.3870967741935484,
+            "total": 13.778959233523382,
+            "switch_seconds": 1.0,
+            "selection_total": 14.778959233523382
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 11.957,
+          "incumbent": true,
+          "unknown_fraction": 0.634,
+          "metrics": {
+            "motion_seconds": 8.458105813067816,
+            "entry_seconds": 0.13139069935663608,
+            "clearance_seconds": 1.5480013937670236,
+            "unknown_seconds": 1.5275744179443216,
+            "deviation_seconds": 0.2917729548971242,
+            "length_m": 12.224210033070435,
+            "ascent_m": 0.034912109375,
+            "minimum_observed_clearance_m": 0.9941074760382708,
+            "unknown_fraction": 0.6341463414634146,
+            "total": 11.95684527903292,
+            "switch_seconds": 0.0,
+            "selection_total": 11.95684527903292
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 198.175
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 95,
+      "map_version": 603,
+      "position": [
+        171.04945373535156,
+        1.1024563312530518,
+        12.95574951171875
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_current",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 10.77,
+        "incumbent": true,
+        "unknown_fraction": 0.61,
+        "metrics": {
+          "motion_seconds": 7.5125922508575025,
+          "entry_seconds": 0.14559036890829033,
+          "clearance_seconds": 1.5288935331054985,
+          "unknown_seconds": 1.3980519613784823,
+          "deviation_seconds": 0.1853085415117205,
+          "length_m": 11.439666941102448,
+          "ascent_m": 0.04425048828125,
+          "minimum_observed_clearance_m": 0.9941074760382708,
+          "unknown_fraction": 0.6103896103896104,
+          "total": 10.770436655761493,
+          "switch_seconds": 0.0,
+          "selection_total": 10.770436655761493
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 11.746,
+          "incumbent": false,
+          "unknown_fraction": 0.537,
+          "metrics": {
+            "motion_seconds": 9.264248605417484,
+            "entry_seconds": 0.1604957053242383,
+            "clearance_seconds": 0.7067118754131201,
+            "unknown_seconds": 1.292519842203429,
+            "deviation_seconds": 0.32161308797115945,
+            "length_m": 11.945304047808278,
+            "ascent_m": 0.04425048828125,
+            "minimum_observed_clearance_m": 1.2842595999343176,
+            "unknown_fraction": 0.5365853658536586,
+            "total": 11.74558911632943,
+            "switch_seconds": 1.0,
+            "selection_total": 12.74558911632943
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 15.07,
+          "incumbent": false,
+          "unknown_fraction": 0.538,
+          "metrics": {
+            "motion_seconds": 11.48957756186817,
+            "entry_seconds": 0.1604957053242383,
+            "clearance_seconds": 1.4630407990960743,
+            "unknown_seconds": 1.6913099546971704,
+            "deviation_seconds": 0.26581619948853386,
+            "length_m": 13.351281834898233,
+            "ascent_m": 1.936764399828272,
+            "minimum_observed_clearance_m": 1.2819950046475213,
+            "unknown_fraction": 0.5384615384615384,
+            "total": 15.070240220474187,
+            "switch_seconds": 1.0,
+            "selection_total": 16.070240220474187
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 10.77,
+          "incumbent": true,
+          "unknown_fraction": 0.61,
+          "metrics": {
+            "motion_seconds": 7.5125922508575025,
+            "entry_seconds": 0.14559036890829033,
+            "clearance_seconds": 1.5288935331054985,
+            "unknown_seconds": 1.3980519613784823,
+            "deviation_seconds": 0.1853085415117205,
+            "length_m": 11.439666941102448,
+            "ascent_m": 0.04425048828125,
+            "minimum_observed_clearance_m": 0.9941074760382708,
+            "unknown_fraction": 0.6103896103896104,
+            "total": 10.770436655761493,
+            "switch_seconds": 0.0,
+            "selection_total": 10.770436655761493
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 198.96
+    },
+    {
+      "event": "candidate_comparison",
+      "comparison": 96,
+      "map_version": 606,
+      "position": [
+        171.69332885742188,
+        1.2484338283538818,
+        12.96820068359375
+      ],
+      "rejoin": [
+        178.03633888164183,
+        -7.021965022628057,
+        13.0
+      ],
+      "reason": "retain_current",
+      "selected": {
+        "strategy": "SIDE_LEFT",
+        "side": "SIDE_LEFT",
+        "cost": 9.938,
+        "incumbent": true,
+        "unknown_fraction": 0.507,
+        "metrics": {
+          "motion_seconds": 6.975264586746457,
+          "entry_seconds": 0.224562343628437,
+          "clearance_seconds": 1.5174461960276804,
+          "unknown_seconds": 1.1063852947118158,
+          "deviation_seconds": 0.11407774458344869,
+          "length_m": 10.784281687700114,
+          "ascent_m": 0.03179931640625,
+          "minimum_observed_clearance_m": 0.9941074760382708,
+          "unknown_fraction": 0.5068493150684932,
+          "total": 9.937736165697839,
+          "switch_seconds": 0.0,
+          "selection_total": 9.937736165697839
+        }
+      },
+      "candidates": [
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 8.604,
+          "incumbent": false,
+          "unknown_fraction": 0.382,
+          "metrics": {
+            "motion_seconds": 7.214319423736116,
+            "entry_seconds": 0.1379173256868627,
+            "clearance_seconds": 0.23852055390310153,
+            "unknown_seconds": 0.8241160611684184,
+            "deviation_seconds": 0.18900589303195992,
+            "length_m": 11.137551527819838,
+            "ascent_m": 0.03179931640625,
+            "minimum_observed_clearance_m": 1.5210208270401606,
+            "unknown_fraction": 0.3815789473684211,
+            "total": 8.603879257526458,
+            "switch_seconds": 1.0,
+            "selection_total": 9.603879257526458
+          }
+        },
+        {
+          "strategy": "OVER",
+          "side": null,
+          "cost": 11.872,
+          "incumbent": false,
+          "unknown_fraction": 0.448,
+          "metrics": {
+            "motion_seconds": 9.438621072143581,
+            "entry_seconds": 1.083547729749206,
+            "clearance_seconds": 0.1491420918770638,
+            "unknown_seconds": 1.2007846059355283,
+            "deviation_seconds": 2.307856685635276e-15,
+            "length_m": 12.844711517822128,
+            "ascent_m": 2.53179931640625,
+            "minimum_observed_clearance_m": 1.5514201492994903,
+            "unknown_fraction": 0.4482758620689655,
+            "total": 11.872095499705381,
+            "switch_seconds": 1.0,
+            "selection_total": 12.872095499705381
+          }
+        },
+        {
+          "strategy": "SIDE_LEFT",
+          "side": "SIDE_LEFT",
+          "cost": 9.938,
+          "incumbent": true,
+          "unknown_fraction": 0.507,
+          "metrics": {
+            "motion_seconds": 6.975264586746457,
+            "entry_seconds": 0.224562343628437,
+            "clearance_seconds": 1.5174461960276804,
+            "unknown_seconds": 1.1063852947118158,
+            "deviation_seconds": 0.11407774458344869,
+            "length_m": 10.784281687700114,
+            "ascent_m": 0.03179931640625,
+            "minimum_observed_clearance_m": 0.9941074760382708,
+            "unknown_fraction": 0.5068493150684932,
+            "total": 9.937736165697839,
+            "switch_seconds": 0.0,
+            "selection_total": 9.937736165697839
+          }
+        }
+      ],
+      "rejected": [
+        {
+          "strategy": "SIDE_RIGHT",
+          "reason": "search_no_path"
+        }
+      ],
+      "elapsed": 200.137
+    }
+  ]
+}

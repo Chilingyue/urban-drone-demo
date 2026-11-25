@@ -1,0 +1,37 @@
+{
+  "kind": "fixed planning clock; live freshness preserved; synthetic test, not flight",
+  "results": [
+    {
+      "scan_age_now": 0.5,
+      "planning_cost": 3.6791671806892716,
+      "planning_unknown_fraction": 0.0,
+      "planning_prefix_visible": true,
+      "live_cost": 3.6791671806892716,
+      "live_unknown_fraction": 0.0,
+      "live_prefix_visible": true,
+      "planning_clock": {
+        "clock": "planning_snapshot",
+        "evaluation_time": 100.5,
+        "scan_received": 100.0,
+        "scan_age_at_evaluation": 0.5,
+        "scan_age_now": 0.5
+      }
+    },
+    {
+      "scan_age_now": 1.5999999999999943,
+      "planning_cost": 3.6791671806892716,
+      "planning_unknown_fraction": 0.0,
+      "planning_prefix_visible": true,
+      "live_cost": 4.9668756939305165,
+      "live_unknown_fraction": 1.0,
+      "live_prefix_visible": false,
+      "planning_clock": {
+        "clock": "planning_snapshot",
+        "evaluation_time": 100.5,
+        "scan_received": 100.0,
+        "scan_age_at_evaluation": 0.5,
+        "scan_age_now": 1.5999999999999943
+      }
+    }
+  ]
+}

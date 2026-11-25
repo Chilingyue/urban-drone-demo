@@ -1,0 +1,103 @@
+{
+  "test": "Actual Gazebo GUI; static box only; no PX4 or flight",
+  "results": [
+    {
+      "mode": "follow",
+      "setup": {
+        "confirmed": true,
+        "mode": "follow",
+        "offset": [
+          -2,
+          0,
+          2
+        ],
+        "attempts": 4,
+        "reason": "render target and GUI tracking state confirmed"
+      },
+      "camera_before": [
+        -2.0,
+        0.0,
+        3.0
+      ],
+      "camera_after": [
+        4.0,
+        0.0,
+        3.0
+      ],
+      "camera_delta_x": 6.0,
+      "expected_camera_delta_x": 6,
+      "target_x": 6,
+      "target_pose": [
+        6.0,
+        0.0,
+        1.0
+      ],
+      "set_pose_ack": false,
+      "passed": true
+    },
+    {
+      "mode": "view",
+      "setup": {
+        "confirmed": true,
+        "mode": "view",
+        "offset": [
+          -5,
+          -5,
+          8
+        ],
+        "attempts": 1,
+        "reason": "render target and GUI tracking state confirmed"
+      },
+      "camera_before": [
+        1.0,
+        -5.0,
+        9.0
+      ],
+      "camera_after": [
+        7.0,
+        -5.0,
+        9.0
+      ],
+      "camera_delta_x": 6.0,
+      "expected_camera_delta_x": 6,
+      "target_x": 12,
+      "target_pose": [
+        12.0,
+        0.0,
+        1.0
+      ],
+      "set_pose_ack": true,
+      "passed": true
+    },
+    {
+      "mode": "free",
+      "setup": {
+        "confirmed": true,
+        "mode": "free",
+        "offset": null,
+        "attempts": 1,
+        "reason": "render target and GUI tracking state confirmed"
+      },
+      "camera_before": [
+        7.0,
+        -5.0,
+        9.0
+      ],
+      "camera_after": [
+        7.0,
+        -5.0,
+        9.0
+      ],
+      "camera_delta_x": 0.0,
+      "expected_camera_delta_x": 0,
+      "target_x": 18,
+      "target_pose": [
+        18.0,
+        0.0,
+        1.0
+      ],
+      "set_pose_ack": true,
+      "passed": true
+    }
+  ]
+}

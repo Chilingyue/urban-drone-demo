@@ -1,0 +1,172 @@
+{
+  "kind": "offline synthetic wall probe",
+  "flight_launched": false,
+  "sensing": "analytic planar scan, real RangeMap.observed_free; occupied points sampled at 0.1 m, not live voxel integration",
+  "control": "actual Mission.control with supplied pose/velocity and ideal tracking",
+  "results": [
+    {
+      "distance_definition": "reference_point_1.1_m",
+      "center_distance_m": 1.1,
+      "sphere_shell_clearance_m": 0.7500000000000001,
+      "speed_caps_m_s": {
+        "along": 1.8,
+        "away": 1.8,
+        "toward": 0.8
+      },
+      "motion_cases": [
+        {
+          "case": "along_wall",
+          "velocity_m_s": [
+            1.0,
+            0,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.875
+        },
+        {
+          "case": "away_from_wall",
+          "velocity_m_s": [
+            0,
+            -1.0,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.875
+        },
+        {
+          "case": "toward_wall_slow",
+          "velocity_m_s": [
+            0,
+            0.4,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.2
+        },
+        {
+          "case": "toward_wall_too_fast",
+          "velocity_m_s": [
+            0,
+            0.8500000000000001,
+            0
+          ],
+          "allowed": false,
+          "state": "BRAKE",
+          "reason": "braking_distance",
+          "stop_distance": 0.6640625000000001
+        },
+        {
+          "case": "sideways_drift_while_aiming_forward",
+          "velocity_m_s": [
+            1.0,
+            0.8500000000000001,
+            0
+          ],
+          "allowed": false,
+          "state": "BRAKE",
+          "reason": "stopping_unobserved",
+          "stop_distance": 1.4046726187101668
+        }
+      ],
+      "new_planning_connector_used": true,
+      "planning_anchor_clearance_m": 1.2042234063293897,
+      "control_progress": {
+        "steps": 55,
+        "virtual_seconds": 2.75,
+        "forward_m": 3.0689413446083664,
+        "holds": 0,
+        "planning_hold_flag": true,
+        "model": "ideal velocity = position lead / 1 s; no PX4 dynamics"
+      }
+    },
+    {
+      "distance_definition": "sphere_shell_1.1_m",
+      "center_distance_m": 1.4500000000000002,
+      "sphere_shell_clearance_m": 1.1,
+      "speed_caps_m_s": {
+        "along": 1.8,
+        "away": 1.8,
+        "toward": 1.04899959967968
+      },
+      "motion_cases": [
+        {
+          "case": "along_wall",
+          "velocity_m_s": [
+            1.0,
+            0,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.875
+        },
+        {
+          "case": "away_from_wall",
+          "velocity_m_s": [
+            0,
+            -1.0,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.875
+        },
+        {
+          "case": "toward_wall_slow",
+          "velocity_m_s": [
+            0,
+            0.4,
+            0
+          ],
+          "allowed": true,
+          "state": "EXECUTE",
+          "reason": "clear",
+          "stop_distance": 0.2
+        },
+        {
+          "case": "toward_wall_too_fast",
+          "velocity_m_s": [
+            0,
+            1.09899959967968,
+            0
+          ],
+          "allowed": false,
+          "state": "BRAKE",
+          "reason": "stopping_unobserved",
+          "stop_distance": 1.0296249749799804
+        },
+        {
+          "case": "sideways_drift_while_aiming_forward",
+          "velocity_m_s": [
+            1.0,
+            1.09899959967968,
+            0
+          ],
+          "allowed": false,
+          "state": "BRAKE",
+          "reason": "stopping_unobserved",
+          "stop_distance": 1.7513417727679517
+        }
+      ],
+      "new_planning_connector_used": false,
+      "planning_anchor_clearance_m": 1.4500000000000002,
+      "control_progress": {
+        "steps": 55,
+        "virtual_seconds": 2.75,
+        "forward_m": 3.0689413446083664,
+        "holds": 0,
+        "planning_hold_flag": true,
+        "model": "ideal velocity = position lead / 1 s; no PX4 dynamics"
+      }
+    }
+  ]
+}

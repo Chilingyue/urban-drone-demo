@@ -1,0 +1,59 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: map
+    Background Color: 35; 39; 46
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Ground grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 60
+    - Class: rviz_default_plugins/Path
+      Name: Initial global route - RED
+      Enabled: true
+      Topic:
+        Value: /urban/global_path
+      Color: 230; 45; 45
+      Line Style: Billboards
+      Line Width: 0.08
+    - Class: rviz_default_plugins/Path
+      Name: Active local route
+      Enabled: false
+      Topic:
+        Value: /urban/local_path
+      Color: 245; 190; 45
+      Line Style: Lines
+      Line Width: 0.1
+    - Class: rviz_default_plugins/Path
+      Name: Actual estimated flight - BLUE
+      Enabled: true
+      Topic:
+        Value: /urban/actual_path
+      Color: 35; 90; 235
+      Line Style: Billboards
+      Line Width: 0.06
+    - Class: rviz_default_plugins/Marker
+      Name: Vehicle and decision
+      Enabled: true
+      Marker Topic:
+        Value: /urban/vehicle_marker
+    - Class: rviz_default_plugins/Marker
+      Name: Observed occupied voxels
+      Enabled: true
+      Marker Topic:
+        Value: /urban/observations
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 60
+      Focal Point:
+        X: 23
+        Y: 0
+        Z: 1
+      Pitch: 0.9
+      Yaw: 4.7
+

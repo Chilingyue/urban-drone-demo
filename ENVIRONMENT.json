@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3",
+  "numpy": "1.26.4",
+  "scipy": "1.11.4",
+  "px4_binary": "/home/ros/PX4-Autopilot/build/px4_sitl_default/bin/px4",
+  "px4_sha256": "dc46b81dd718a3a54034303cb90df411a9668d35f6d3e3263cd6852f4fbfb6bc",
+  "gazebo": "8.15.0",
+  "ros_distro": "jazzy",
+  "gui": "WSLg",
+  "coordinate_frame": "ENU"
+}

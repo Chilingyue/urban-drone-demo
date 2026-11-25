@@ -1,0 +1,26 @@
+{
+  "bounds": [-80, 920, -500, 500],
+  "start": [0, 0],
+  "goal": [820, 0],
+  "road_spacing": 120,
+  "road_width": 28,
+  "building_corridor_half_width": 70,
+  "building_height_quantile": 0.8,
+  "roof_clearance": 2.0,
+  "grid_resolution": 2.0,
+  "vehicle_radius": 0.35,
+  "safety_margin": 0.4,
+  "tracking_margin": 0.3,
+  "local_window": [42, 42, 30],
+  "local_lateral_limit": 14.0,
+  "tracking_lookahead": 3.0,
+  "landing_timeout": 180,
+  "mission_timeout": 1000,
+  "obstacles": [
+    {"kind": "wall", "progress": 0.18, "size": [1.5, 22, 1.2]},
+    {"kind": "building", "progress": 0.62, "size": [6, 6, 32]},
+    {"kind": "gate", "progress": 0.84, "width": 24, "height_above_cruise": 32,
+     "depth": 2, "opening_width": 5, "opening_below_cruise": 3,
+     "opening_above_cruise": 4}
+  ]
+}

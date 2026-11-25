@@ -1,0 +1,39 @@
+{
+  "kind": "same immutable scan and path, different evaluation wall clock; not a flight",
+  "results": [
+    {
+      "snapshot_age_seconds": 0.5,
+      "score": 3.6791671806892716,
+      "prefix_visible": true,
+      "metrics": {
+        "motion_seconds": 3.6791671806892716,
+        "entry_seconds": 0.0,
+        "clearance_seconds": 0.0,
+        "unknown_seconds": 0.0,
+        "deviation_seconds": 0.0,
+        "length_m": 5.0,
+        "ascent_m": 0.0,
+        "minimum_observed_clearance_m": null,
+        "unknown_fraction": 0.0,
+        "total": 3.6791671806892716
+      }
+    },
+    {
+      "snapshot_age_seconds": 1.5999999999999943,
+      "score": 4.9668756939305165,
+      "prefix_visible": false,
+      "metrics": {
+        "motion_seconds": 3.6791671806892716,
+        "entry_seconds": 0.0,
+        "clearance_seconds": 0.0,
+        "unknown_seconds": 1.287708513241245,
+        "deviation_seconds": 0.0,
+        "length_m": 5.0,
+        "ascent_m": 0.0,
+        "minimum_observed_clearance_m": null,
+        "unknown_fraction": 1.0,
+        "total": 4.9668756939305165
+      }
+    }
+  ]
+}

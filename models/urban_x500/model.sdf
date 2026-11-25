@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+  <model name="urban_x500">
+    <include merge="true"><uri>model://x500</uri></include>
+    <link name="lidar_link">
+      <pose relative_to="base_link">0 0 0.3 0 0 0</pose>
+      <inertial>
+        <mass>0.001</mass>
+        <inertia><ixx>0.00001</ixx><iyy>0.00001</iyy><izz>0.00001</izz></inertia>
+      </inertial>
+      <sensor name="local_lidar" type="gpu_lidar">
+        <topic>/urban/lidar</topic>
+        <gz_frame_id>lidar_link</gz_frame_id>
+        <update_rate>5</update_rate>
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <lidar>
+          <scan>
+            <horizontal><samples>181</samples><resolution>1</resolution><min_angle>-3.14159265359</min_angle><max_angle>3.14159265359</max_angle></horizontal>
+            <vertical><samples>37</samples><resolution>1</resolution><min_angle>-1.57079632679</min_angle><max_angle>1.57079632679</max_angle></vertical>
+          </scan>
+          <range><min>0.2</min><max>12</max><resolution>0.01</resolution></range>
+        </lidar>
+      </sensor>
+    </link>
+    <joint name="lidar_joint" type="fixed"><parent>base_link</parent><child>lidar_link</child></joint>
+  </model>
+</sdf>
+
